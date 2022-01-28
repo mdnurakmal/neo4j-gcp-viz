@@ -19,4 +19,4 @@ RUN chmod +x install.sh
 RUN sh install.sh
 
 EXPOSE 7474 7687
-CMD ["run.sh" ]
+CMD ["bash" "run.sh" ]
