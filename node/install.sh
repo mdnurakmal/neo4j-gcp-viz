@@ -11,4 +11,4 @@ apt install openjdk-8-jre-headless -y
 java -version
 ls
 pwd
-$HOME/neo4j-community-4.4.3/bin/neo4j console
+./neo4j-community-4.4.3/bin/neo4j console
