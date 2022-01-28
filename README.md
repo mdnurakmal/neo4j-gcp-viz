@@ -25,9 +25,9 @@ Export cloud resources to txt
 	> test.txt
 ```
 
-# Notes
+# Notes (Neo4j Queries)
 
-Select all in neo4j
+Select all
 ```
 Match (n)
 Return n
