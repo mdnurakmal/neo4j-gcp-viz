@@ -16,7 +16,7 @@ RUN npm install
 COPY . .
 
 RUN chmod +x install.sh
-RUN install.sh
+RUN sh install.sh
 
 EXPOSE 7474 7687
 CMD [ "node", "app.js" ]
