@@ -1,0 +1,24 @@
+{
+  "name": "neo4j-gcp-viz",
+  "version": "1.0.0",
+  "description": "neo4j-gcp-viz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdnurakmal/neo4j-gcp-viz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdnurakmal/neo4j-gcp-viz/issues"
+  },
+  "homepage": "https://github.com/mdnurakmal/neo4j-gcp-viz#readme",
+  "dependencies": {
+    "lodash.merge": "^4.6.2",
+    "merge-deep": "^3.0.3",
+    "neo4j-driver": "^4.4.1"
+  }
+}

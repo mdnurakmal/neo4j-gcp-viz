@@ -1,0 +1,1074 @@
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: bigquery.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/bigquery.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: sql-component.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/sql-component.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: monitoring.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/monitoring.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: datastore.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/datastore.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: cloudapis.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/cloudapis.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: serviceusage.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/serviceusage.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: cloudtrace.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/cloudtrace.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: clouddebugger.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/clouddebugger.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2022-01-26T13:51:44Z'
+displayName: all
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/all
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Disk
+createTime: '2022-01-26T13:23:10Z'
+displayName: instance-2
+location: asia-southeast1-b
+name: //compute.googleapis.com/projects/civil-array-336805/zones/asia-southeast1-b/disks/instance-2
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+relationships:
+  DISK_FROM_IMAGE:
+    relatedResources:
+    - assetType: compute.googleapis.com/Image
+      fullResourceName: //compute.googleapis.com/projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20220118
+  DISK_TO_INSTANCE:
+    relatedResources:
+    - assetType: compute.googleapis.com/Instance
+      fullResourceName: //compute.googleapis.com/projects/civil-array-336805/zones/asia-southeast1-b/instances/instance-2
+state: RESTORING
+---
+additionalAttributes:
+  deletionProtection: 'FALSE'
+  id: '1184276826367522258'
+  internalIPs:
+  - 10.148.0.6
+  machineType: g1-small
+  networkInterfaceNames:
+  - nic0
+  networkInterfaceNetworks:
+  - https://www.googleapis.com/compute/v1/projects/civil-array-336805/global/networks/default
+assetType: compute.googleapis.com/Instance
+createTime: '2022-01-26T13:23:09Z'
+displayName: instance-2
+location: asia-southeast1-b
+name: //compute.googleapis.com/projects/civil-array-336805/zones/asia-southeast1-b/instances/instance-2
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: TERMINATED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2022-01-20T04:07:58Z'
+displayName: cwp
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/cwp
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Disk
+createTime: '2022-01-20T03:39:31Z'
+displayName: cwp
+location: asia-southeast1-b
+name: //compute.googleapis.com/projects/civil-array-336805/zones/asia-southeast1-b/disks/cwp
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+relationships:
+  DISK_FROM_IMAGE:
+    relatedResources:
+    - assetType: compute.googleapis.com/Image
+      fullResourceName: //compute.googleapis.com/projects/centos-cloud/global/images/centos-7-v20211214
+  DISK_TO_INSTANCE:
+    relatedResources:
+    - assetType: compute.googleapis.com/Instance
+      fullResourceName: //compute.googleapis.com/projects/civil-array-336805/zones/asia-southeast1-b/instances/cwp
+state: RESTORING
+---
+additionalAttributes:
+  deletionProtection: 'FALSE'
+  id: '1892470573599385501'
+  internalIPs:
+  - 10.148.0.5
+  machineType: g1-small
+  networkInterfaceNames:
+  - nic0
+  networkInterfaceNetworks:
+  - https://www.googleapis.com/compute/v1/projects/civil-array-336805/global/networks/default
+assetType: compute.googleapis.com/Instance
+createTime: '2022-01-20T03:39:30Z'
+displayName: cwp
+location: asia-southeast1-b
+name: //compute.googleapis.com/projects/civil-array-336805/zones/asia-southeast1-b/instances/cwp
+networkTags:
+- http-server
+- https-server
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: TERMINATED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2022-01-19T07:55:22Z'
+displayName: vestacp-ingress
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/vestacp-ingress
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T14:04:48Z'
+description: Default local route to the subnetwork 10.196.0.0/20.
+displayName: default-route-521e8bcd9e7aadaf
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-521e8bcd9e7aadaf
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.196.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T14:04:39Z'
+displayName: default
+location: us-east7
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-east7/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:41:04Z'
+displayName: node-egress
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/node-egress
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:40:35Z'
+displayName: node-ingress
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/node-ingress
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:33:23Z'
+displayName: default-allow-https
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/default-allow-https
+networkTags:
+- https-server
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:33:23Z'
+displayName: default-allow-http
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/default-allow-http
+networkTags:
+- http-server
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+additionalAttributes:
+  deletionProtection: 'FALSE'
+  id: '7164731182152897672'
+  internalIPs:
+  - 10.182.0.2
+  machineType: f1-micro
+  networkInterfaceNames:
+  - nic0
+  networkInterfaceNetworks:
+  - https://www.googleapis.com/compute/v1/projects/civil-array-336805/global/networks/default
+assetType: compute.googleapis.com/Instance
+createTime: '2021-12-31T11:32:56Z'
+displayName: instance-1
+location: us-west4-b
+name: //compute.googleapis.com/projects/civil-array-336805/zones/us-west4-b/instances/instance-1
+networkTags:
+- http-server
+- https-server
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: TERMINATED
+---
+assetType: compute.googleapis.com/Disk
+createTime: '2021-12-31T11:32:56Z'
+displayName: instance-1
+location: us-west4-b
+name: //compute.googleapis.com/projects/civil-array-336805/zones/us-west4-b/disks/instance-1
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+relationships:
+  DISK_FROM_IMAGE:
+    relatedResources:
+    - assetType: compute.googleapis.com/Image
+      fullResourceName: //compute.googleapis.com/projects/ubuntu-os-cloud/global/images/ubuntu-1804-bionic-v20211214
+  DISK_TO_INSTANCE:
+    relatedResources:
+    - assetType: compute.googleapis.com/Instance
+      fullResourceName: //compute.googleapis.com/projects/civil-array-336805/zones/us-west4-b/instances/instance-1
+state: RESTORING
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:03:49Z'
+description: Allow internal traffic on the default network
+displayName: default-allow-internal
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/default-allow-internal
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:03:49Z'
+description: Allow RDP from anywhere
+displayName: default-allow-rdp
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/default-allow-rdp
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:03:49Z'
+description: Allow ICMP from anywhere
+displayName: default-allow-icmp
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/default-allow-icmp
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Firewall
+createTime: '2021-12-31T11:03:49Z'
+description: Allow SSH from anywhere
+displayName: default-allow-ssh
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/firewalls/default-allow-ssh
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:37Z'
+description: Default local route to the subnetwork 10.128.0.0/20.
+displayName: default-route-e6ed2bfdb33f8d26
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-e6ed2bfdb33f8d26
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:37Z'
+description: Default local route to the subnetwork 10.140.0.0/20.
+displayName: default-route-04264f1c326a0a64
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-04264f1c326a0a64
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:36Z'
+description: Default local route to the subnetwork 10.172.0.0/20.
+displayName: default-route-34620e4c7280979a
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-34620e4c7280979a
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:36Z'
+description: Default local route to the subnetwork 10.164.0.0/20.
+displayName: default-route-d0ef11cb2fc718df
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-d0ef11cb2fc718df
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:35Z'
+description: Default local route to the subnetwork 10.190.0.0/20.
+displayName: default-route-5f7b71c2b5582363
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-5f7b71c2b5582363
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:35Z'
+description: Default local route to the subnetwork 10.156.0.0/20.
+displayName: default-route-d361921a9591ba6d
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-d361921a9591ba6d
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:35Z'
+description: Default local route to the subnetwork 10.166.0.0/20.
+displayName: default-route-216a2424a382e42c
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-216a2424a382e42c
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.146.0.0/20.
+displayName: default-route-0c9315a3c75fece0
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-0c9315a3c75fece0
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.194.0.0/20.
+displayName: default-route-80cd4e87b916f8ee
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-80cd4e87b916f8ee
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.184.0.0/20.
+displayName: default-route-56bab6ad7a4a6bc5
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-56bab6ad7a4a6bc5
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.178.0.0/20.
+displayName: default-route-440adac1966ea710
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-440adac1966ea710
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.182.0.0/20.
+displayName: default-route-787e59ff9d72bd4b
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-787e59ff9d72bd4b
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.168.0.0/20.
+displayName: default-route-9103a9ca989bc621
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-9103a9ca989bc621
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:34Z'
+description: Default local route to the subnetwork 10.138.0.0/20.
+displayName: default-route-753fdc2452f4b140
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-753fdc2452f4b140
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.162.0.0/20.
+displayName: default-route-c8910874cf7c8994
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-c8910874cf7c8994
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.158.0.0/20.
+displayName: default-route-e99f3e02ec6cf7b7
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-e99f3e02ec6cf7b7
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.142.0.0/20.
+displayName: default-route-d5a422e7abd40f7f
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-d5a422e7abd40f7f
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.154.0.0/20.
+displayName: default-route-8737e02408fbb085
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-8737e02408fbb085
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.180.0.0/20.
+displayName: default-route-596322db3af93c13
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-596322db3af93c13
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.160.0.0/20.
+displayName: default-route-5c000ee34e79f2b6
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-5c000ee34e79f2b6
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.152.0.0/20.
+displayName: default-route-ed8bec4ae8fb682c
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-ed8bec4ae8fb682c
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.186.0.0/20.
+displayName: default-route-2bcac061555661aa
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-2bcac061555661aa
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.174.0.0/20.
+displayName: default-route-ece7afb8c45613ef
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-ece7afb8c45613ef
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.188.0.0/20.
+displayName: default-route-31c2bfc78bc74b9c
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-31c2bfc78bc74b9c
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.192.0.0/20.
+displayName: default-route-6ce092434e92d33d
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-6ce092434e92d33d
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.148.0.0/20.
+displayName: default-route-cd01efd62b4507f2
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-cd01efd62b4507f2
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:33Z'
+description: Default local route to the subnetwork 10.170.0.0/20.
+displayName: default-route-f72d4a555e6dba14
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-f72d4a555e6dba14
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:32Z'
+description: Default local route to the subnetwork 10.132.0.0/20.
+displayName: default-route-abff0d719a81c842
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-abff0d719a81c842
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:32Z'
+description: Default local route to the subnetwork 10.150.0.0/20.
+displayName: default-route-549f85d158cd6350
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-549f85d158cd6350
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.194.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: southamerica-west1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/southamerica-west1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.192.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: australia-southeast2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/australia-southeast2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.190.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-south2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-south2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.188.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: northamerica-northeast2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/northamerica-northeast2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.186.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-central2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-central2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.184.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-southeast2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-southeast2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.182.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-west4
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-west4/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.180.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-west3
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-west3/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.178.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-northeast3
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-northeast3/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.174.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-northeast2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-northeast2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.172.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-west6
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-west6/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.170.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-east2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-east2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.168.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-west2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-west2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.166.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-north1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-north1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.164.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-west4
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-west4/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.162.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: northamerica-northeast1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/northamerica-northeast1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.160.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-south1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-south1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.158.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: southamerica-east1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/southamerica-east1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.156.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-west3
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-west3/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.154.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-west2
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-west2/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.152.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: australia-southeast1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/australia-southeast1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.150.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-east4
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-east4/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.148.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-southeast1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-southeast1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.146.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-northeast1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-northeast1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.142.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-east1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-east1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.140.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: asia-east1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/asia-east1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.138.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-west1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-west1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.132.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: europe-west1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/europe-west1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  gatewayAddress: 10.128.0.1
+assetType: compute.googleapis.com/Subnetwork
+createTime: '2021-12-31T11:03:29Z'
+displayName: default
+location: us-central1
+name: //compute.googleapis.com/projects/civil-array-336805/regions/us-central1/subnetworks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Route
+createTime: '2021-12-31T11:03:25Z'
+description: Default route to the Internet.
+displayName: default-route-80a8fd99fc1e5a6d
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/routes/default-route-80a8fd99fc1e5a6d
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Network
+createTime: '2021-12-31T11:03:19Z'
+description: Default network for the project
+displayName: default
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805/global/networks/default
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+assetType: compute.googleapis.com/Project
+createTime: '2021-12-31T11:03:12Z'
+displayName: civil-array-336805
+location: global
+name: //compute.googleapis.com/projects/civil-array-336805
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+---
+additionalAttributes:
+  email: 574297423774-compute@developer.gserviceaccount.com
+  uniqueId: '105741251537952490751'
+assetType: iam.googleapis.com/ServiceAccount
+displayName: Compute Engine default service account
+name: //iam.googleapis.com/projects/civil-array-336805/serviceAccounts/574297423774-compute@developer.gserviceaccount.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+additionalAttributes:
+  projectId: civil-array-336805
+assetType: cloudresourcemanager.googleapis.com/Project
+createTime: '2021-12-31T05:57:30Z'
+displayName: My First Project
+location: global
+name: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ACTIVE
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: servicemanagement.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/servicemanagement.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: storage.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/storage.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: cloudasset.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/cloudasset.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: logging.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/logging.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: compute.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/compute.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: oslogin.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/oslogin.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: storage-api.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/storage-api.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: storage-component.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/storage-component.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
+---
+assetType: serviceusage.googleapis.com/Service
+displayName: bigquerystorage.googleapis.com
+location: global
+name: //serviceusage.googleapis.com/projects/574297423774/services/bigquerystorage.googleapis.com
+parentAssetType: cloudresourcemanager.googleapis.com/Project
+parentFullResourceName: //cloudresourcemanager.googleapis.com/projects/civil-array-336805
+project: projects/574297423774
+state: ENABLED
