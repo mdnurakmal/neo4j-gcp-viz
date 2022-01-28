@@ -1,4 +1,4 @@
-# neo4j-gcp-viz
+## How to use Neo4j to visualize cloud infrastructure and dependencies
 
 ```
 wget https://neo4j.com/artifact.php?name=neo4j-community-4.4.3-unix.tar.gz
