@@ -2,10 +2,7 @@
 
 wget https://neo4j.com/artifact.php?name=neo4j-community-4.4.3-unix.tar.gz -O neo4j-community-4.4.3-unix.tar.gz
 tar xf neo4j-community-4.4.3-unix.tar.gz
-apk update
-
-apk add openjdk8=8.242.08-r0 -y
-
+apk add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 java -version
 ls
 pwd
