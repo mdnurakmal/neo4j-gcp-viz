@@ -15,8 +15,8 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-RUN chmod +x /install.sh
-RUN /install.sh
+RUN chmod +x install.sh
+RUN install.sh
 
 EXPOSE 7474 7687
 CMD [ "node", "app.js" ]
