@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -O file https://neo4j.com/artifact.php?name=neo4j-community-4.4.3-unix.tar.gz
+wget https://neo4j.com/artifact.php?name=neo4j-community-4.4.3-unix.tar.gz -O neo4j-community-4.4.3-unix.tar.gz
 tar xf neo4j-community-4.4.3-unix.tar.gz
 apt update -y
 
