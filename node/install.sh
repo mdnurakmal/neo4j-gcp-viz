@@ -2,11 +2,9 @@
 
 wget https://neo4j.com/artifact.php?name=neo4j-community-4.4.3-unix.tar.gz -O neo4j-community-4.4.3-unix.tar.gz
 tar xf neo4j-community-4.4.3-unix.tar.gz
-apt-get update -y
+apk update
 
-apt-get install default-jre -y
-apt-get install openjdk-11-jre-headless -y
-apt-get install openjdk-8-jre-headless -y
+apk add openjdk8=8.242.08-r0 -y
 
 java -version
 ls
