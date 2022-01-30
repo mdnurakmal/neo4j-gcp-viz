@@ -13,7 +13,7 @@ resource "google_project_service" "cloudbuild" {
   disable_on_destroy = true
 }
 
-resource "google_project_service" "cloudbuild" {
+resource "google_project_service" "compute" {
   service = "compute.googleapis.com"
   disable_on_destroy = true
 }
