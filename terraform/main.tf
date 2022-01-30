@@ -12,15 +12,12 @@ terraform {
     bucket  = "<PLACEHOLDER_BUCKET>"
     prefix  = "terraform/state"
   }
-   depends_on = [google_storage_bucket.tf-bucket]
 }
 
 # Create a GCS Bucket
 resource "google_storage_bucket" "tf-bucket" {
   name          = local.project+"-neo4j-viz"
-  location      = var.gcp_region
   force_destroy = true
-  storage_class = var.storage-class
   versioning {
     enabled = true
   }
