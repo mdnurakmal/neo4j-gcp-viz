@@ -10,14 +10,15 @@ grep -o 'No instance found for the given address!.*' <<< "$return_value" | wc -l
 return_value=$?
 if [[ $return_value -ne 0 ]] 
 then
-    echo "Bucket not managed"
-else
     echo "Bucket managed"
+else
+    echo "Bucket not managed"
+    terraform import google_storage_bucket.tf-bucket ${GOOGLE_CLOUD_PROJECT}-neo4j-viz
     #gsutil mb gs://${1}-neo4j-viz
 fi
 
-# "cd terraform && terraform import google_storage_bucket.tf-bucket ${GOOGLE_CLOUD_PROJECT}-neo4j-viz",
-# "cd terraform && terraform state pull",
-# "cd terraform && terraform apply -auto-approve -var region=$GOOGLE_CLOUD_REGION"
 
-# cd..
+terraform state pull
+terraform apply -auto-approve -var region=$GOOGLE_CLOUD_REGION"
+
+cd..
