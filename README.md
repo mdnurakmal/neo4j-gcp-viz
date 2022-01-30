@@ -2,9 +2,9 @@
 
 # Usage
 
-1. Create a project in Google Cloud Console
-2. Click 'Run on Google' button
 
+1. Click 'Run on Google' button
+2. Create a new project or choose existing project from the cloud shell
 
 [![Run on Google
 Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/neo4j-gcp-viz.git)
