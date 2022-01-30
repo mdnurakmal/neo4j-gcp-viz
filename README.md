@@ -1,10 +1,13 @@
 # Serverless GCP visualizer with Neo4j
 
+# Prerequisite
+1. GCP account with billing enabled
+2. Existing Project
+
 # Usage
 
-
 1. Click 'Run on Google' button
-2. Create a new project or choose existing project from the cloud shell
+2. Choose existing project to run visualizer
 
 [![Run on Google
 Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/neo4j-gcp-viz.git)
