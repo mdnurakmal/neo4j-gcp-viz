@@ -12,7 +12,7 @@
                 "sudo ./install.sh",
 
                 "tfswitch -u -b $HOME/bin",
-                "ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
+               
 
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
