@@ -21,3 +21,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 # Objective
 - One click to deploy GO app on Google Cloud Platform using terraform
 - Serverless architecture
+
+
+# Notes
+What is the workaround for local variable cannot be used for terraform backend

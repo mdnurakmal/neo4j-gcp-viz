@@ -16,12 +16,10 @@
 
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
-                "sudo chmod +x ./create_bucket.sh",
-                "sudo ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
 
-                "cd terraform && terraform init",
-                "cd terraform && terraform state pull",
-                "cd terraform && terraform apply -auto-approve -var region=$GOOGLE_CLOUD_REGION"
+                "sed -i 's/<PLACEHOLDER_BUCKET>/$GOOGLE_CLOUD_PROJECT/g' /terraform/main.tf",
+                "cat /terraform/main.tf"
+               
             ]
         },
         "postcreate": {
