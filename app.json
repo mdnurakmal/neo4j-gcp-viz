@@ -11,8 +11,8 @@
                 "sudo chmod +x ./install.sh",
                 "sudo ./install.sh",
 
-                "sudo tfswitch -u -b /bin",
-                "sudo ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
+                "tfswitch -u -b $HOME/bin",
+                "ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
 
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
