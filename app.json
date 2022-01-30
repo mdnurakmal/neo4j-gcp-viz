@@ -24,7 +24,7 @@
                
             
                 "cd terraform && terraform init",
-                "cd terraform && terraform delete google_storage_bucket.tf-bucket"
+                "cd terraform && terraform destroy"
             ]
         },
         "postcreate": {
