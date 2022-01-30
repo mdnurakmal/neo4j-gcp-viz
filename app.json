@@ -17,7 +17,7 @@
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
 
-                "sed -i 's/<PLACEHOLDER_BUCKET>/${GOOGLE_CLOUD_PROJECT}-neo4j-viz/g' ./terraform/main.tf",
+                "sed -i 's/<PLACEHOLDER_BUCKET>/'$GOOGLE_CLOUD_PROJECT'-neo4j-viz/g' ./terraform/main.tf",
                 "cat ./terraform/main.tf"
                
             ]
