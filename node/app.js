@@ -20,7 +20,7 @@ const getMapFromArray = data =>
 
 async function processLineByLine() {
 
-	const fileStream = fs.createReadStream('test.txt');
+	const fileStream = fs.createReadStream('db.txt');
 
 	const rl = readline.createInterface({
 		input: fileStream,

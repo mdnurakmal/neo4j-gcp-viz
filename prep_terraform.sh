@@ -1,6 +1,8 @@
 #!/bin/bash
 ls
 pwd
+cat node/db.txt
+
 echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 gcloud config set project $1 $2
 cd terraform
