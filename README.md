@@ -27,4 +27,7 @@ Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=
 
 
 # Notes
-What is the workaround for local variable cannot be used for terraform backend
+What is the workaround for local variable cannot be used for terraform backend 
+- Create bucket first then import to terraform
+
+Cloud run has a limit of 32 mb per request
