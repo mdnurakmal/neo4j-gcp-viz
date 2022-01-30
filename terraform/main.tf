@@ -25,10 +25,12 @@ resource "google_storage_bucket" "tf-bucket" {
   depends_on = [google_project_service.compute]
 }
 
-provider "google" {}
+provider "google" {
+    project     = "<PLACEHOLDER_PROJECTID>"
+    region      = var.region
+}
 
 data "google_project" "project" {
-    project_id = "<PLACEHOLDER_PROJECTID>"
 }
 
 
