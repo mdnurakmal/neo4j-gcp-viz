@@ -16,7 +16,7 @@ terraform {
 
 # Create a GCS Bucket
 resource "google_storage_bucket" "tf-bucket" {
-  name          = local.project"-neo4j-viz"
+  name          = ${local.project}."-neo4j-viz"
   force_destroy = true
   versioning {
     enabled = true
