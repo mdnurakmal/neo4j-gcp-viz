@@ -8,9 +8,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-SHELL ["/bin/bash", "--login", "-c"]
-
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
 RUN nvm install 10.15.3
 
 RUN nvm install 14 
