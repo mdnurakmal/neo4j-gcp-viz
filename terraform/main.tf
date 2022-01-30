@@ -28,6 +28,7 @@ resource "google_storage_bucket" "tf-bucket" {
 provider "google" {}
 
 data "google_project" "project" {
+    project_id = local.project
 }
 
 
