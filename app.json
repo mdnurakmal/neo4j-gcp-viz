@@ -29,11 +29,7 @@
                 "./prep_terraform.sh $GOOGLE_CLOUD_PROJECT $GOOGLE_CLOUD_REGION"
 
             ]
-        },
-        "postcreate": {
-            "commands": [
-                "gcloud run services update text-to-speech-cloud-run --service-account text-to-speech-worker-id@$GOOGLE_CLOUD_PROJECT.iam.gserviceaccount.com --platform managed"
-            ]
         }
+   
     }
 }
