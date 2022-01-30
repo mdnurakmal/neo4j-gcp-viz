@@ -21,6 +21,8 @@ resource "google_storage_bucket" "tf-bucket" {
   versioning {
     enabled = true
   }
+
+  depends_on = [google_project_service.compute]
 }
 
 provider "google" {}
