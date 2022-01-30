@@ -12,6 +12,7 @@ terraform {
     bucket  = "<PLACEHOLDER_BUCKET>"
     prefix  = "terraform/state"
   }
+   depends_on = [google_storage_bucket.tf-bucket]
 }
 
 # Create a GCS Bucket
