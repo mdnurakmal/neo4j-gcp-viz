@@ -11,13 +11,13 @@
                 "sudo chmod +x ./install.sh",
                 "sudo ./install.sh",
 
-                "tfswitch -u -b /bin",
+                "sudo tfswitch -u -b /bin",
                 "sudo ln -sf $HOME/bin/terraform /usr/local/bin/terraform",
 
                 "gcloud config set project $GOOGLE_CLOUD_PROJECT",
                 "gcloud config set run/region $GOOGLE_CLOUD_REGION",
                 "gcloud services enable compute.googleapis.com",
-                "gcloud asset search-all-resources --scope projects/elegant-gearing-339516 > /node/db.txt",
+                "gcloud asset search-all-resources --scope projects/elegant-gearing-339516 > ./node/db.txt",
             
                 "sudo chmod +x ./create_bucket.sh",
                 "sudo ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
