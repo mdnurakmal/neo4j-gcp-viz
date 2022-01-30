@@ -8,7 +8,7 @@ terraform state show 'google_storage_bucket.tf-bucket'
 return_value=$?
 grep -o 'No instance found for the given address!.*' <<< "$return_value" | wc -l
 return_value=$?
-if [[ $return_value -ne 0 ]] 
+if [[ $return_value == 0 ]] 
 then
     echo "Bucket managed"
 else
