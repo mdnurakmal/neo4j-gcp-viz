@@ -6,7 +6,9 @@ terraform init
 terraform state show 'google_storage_bucket.tf-bucket'
 
 return_value=$?
-if [[  grep -o 'No instance found for the given address!.*' <<< "$return_value" | wc -l != 0]] 
+grep -o 'No instance found for the given address!.*' <<< "$return_value" | wc -l
+return_value=$?
+if [[  $return_value != 0]] 
 then
     echo "Bucket not managed"
 else
