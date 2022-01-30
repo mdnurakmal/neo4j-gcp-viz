@@ -1,10 +1,8 @@
 #!/bin/bash
 ls
 pwd
-cat node/db.txt
+#cat node/db.txt
 
-echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-gcloud config set project $1 $2
 cd terraform
 terraform init
 terraform state show 'google_storage_bucket.tf-bucket'
