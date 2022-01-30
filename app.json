@@ -23,7 +23,7 @@
                 "cat ./terraform/main.tf",
                
                 "sudo chmod +x ./prep_terraform.sh",
-                "sudo ./prep_terraform.sh $GOOGLE_CLOUD_PROJECT"
+                "sudo ./prep_terraform.sh $GOOGLE_CLOUD_PROJECT $GOOGLE_CLOUD_REGION"
 
             ]
         },

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gcloud config set project $1
+gcloud config set project $1 $2
 cd terraform
 terraform init
 terraform state show 'google_storage_bucket.tf-bucket'
@@ -13,12 +13,12 @@ then
     echo "Bucket managed"
 else
     echo "Bucket not managed"
-    terraform import google_storage_bucket.tf-bucket ${GOOGLE_CLOUD_PROJECT}-neo4j-viz
+    terraform import google_storage_bucket.tf-bucket $1-neo4j-viz
     #gsutil mb gs://${1}-neo4j-viz
 fi
 
 
 terraform state pull
-terraform apply -auto-approve -var region=$GOOGLE_CLOUD_REGION"
+terraform apply -auto-approve -var region=$2
 
 cd..
