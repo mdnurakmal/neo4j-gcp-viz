@@ -9,7 +9,7 @@ terraform {
 
 terraform {
   backend "gcs" {
-    bucket  = <PLACEHOLDER_BUCKET>
+    bucket  = "<PLACEHOLDER_BUCKET>"
     prefix  = "terraform/state"
   }
 }
