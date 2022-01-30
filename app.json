@@ -21,7 +21,9 @@
                 "sudo ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
 
                 "sed -i 's/<PLACEHOLDER_BUCKET>/'$GOOGLE_CLOUD_PROJECT'-neo4j-viz/g' ./terraform/main.tf",
-                "cat ./terraform/main.tf",
+                "sed -i 's/<PLACEHOLDER_PROJECTID>/'$GOOGLE_CLOUD_PROJECT'/g' ./terraform/main.tf",
+               
+                
                
                 "sudo chmod +x ./prep_terraform.sh",
                 "sudo ./prep_terraform.sh $GOOGLE_CLOUD_PROJECT $GOOGLE_CLOUD_REGION"
