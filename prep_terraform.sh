@@ -1,5 +1,7 @@
 #!/bin/bash
-
+ls
+pwd
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 gcloud config set project $1 $2
 cd terraform
 terraform init

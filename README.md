@@ -2,12 +2,12 @@
 
 # Prerequisite
 1. GCP account with billing enabled
-2. Existing Project
+2. At least 1 existing Project
 
 # Usage
 
 1. Click 'Run on Google' button
-2. Choose existing project to run visualizer
+2. Follow instructions in cloud shell
 
 [![Run on Google
 Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/neo4j-gcp-viz.git)
