@@ -32,6 +32,9 @@ terraform apply -auto-approve -var region=$2
 
 cd ..
 
+gcloud container clusters get-credentials my-gke-cluster --region us-central1 --project neo4j-339806
+kubectl apply deployment.yaml
+
 #gcloud builds submit --config cloudbuild.yaml .
 
 #docker pull gcr.io/$1/neo4j-gcp-viz
