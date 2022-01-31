@@ -33,3 +33,5 @@ What is the workaround for local variable cannot be used for terraform backend
 Cloud run has a limit of 32 mb per request
 
 Unable to use default build from app.json because source is in another folder , not in root folder
+
+Unable to pull image directly from dockerhub into cloud run so have to pull from dockerhub first and push to gcp registry first
