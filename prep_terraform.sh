@@ -27,4 +27,4 @@ cd ..
 
 gcloud builds submit --config cloudbuild.yaml ./node
 
-docker pull gci.io/$1/neo4j-viz
+docker pull gcr.io/$1/neo4j-viz
