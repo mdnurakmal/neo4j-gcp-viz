@@ -37,3 +37,5 @@ Unable to use default build from app.json because source is in another folder , 
 Unable to pull image directly from dockerhub into cloud run so have to pull from dockerhub first and push to gcp registry first
 
 Cloud run only allows 1 expose port but neo4j requires 2 port 
+
+If a new resource is created from kubernetes , how do we let terraform manage it ?
