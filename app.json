@@ -1,7 +1,7 @@
 { 
     
     "build": {
-        "skip": false
+        "skip": true
         },
     "hooks": {
         "prebuild": {

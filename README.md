@@ -31,3 +31,5 @@ What is the workaround for local variable cannot be used for terraform backend
 - Create bucket first then import to terraform
 
 Cloud run has a limit of 32 mb per request
+
+Unable to use default build from app.json because source is in another folder , not in root folder

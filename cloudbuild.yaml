@@ -1,10 +1,12 @@
 steps:
   - id: "test"
-    name: 'gcr.io/cloud-builders/gcloud'
+    name: "gcr.io/cloud-builders/gcloud"
     entrypoint: 'bash'
     args:
-    - 'ls'
-    - 'pwd'
+    - '-c'
+    - |
+      ls
+      pwd
 
 
   - id: "build image"
