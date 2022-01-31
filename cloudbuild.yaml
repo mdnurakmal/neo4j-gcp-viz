@@ -15,7 +15,7 @@ steps:
 
   - id: "pull image"
     name: "gcr.io/cloud-builders/docker"
-    args: ["pull", "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}:latest"]
+    args: ["pull", "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"]
 
 options:
   logStreamingOption: STREAM_ON
@@ -25,4 +25,4 @@ substitutions:
   _SERVICE_NAME: neo4j-gcp-viz
 
 images:
-  - "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}"
+  - "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}:latest"
