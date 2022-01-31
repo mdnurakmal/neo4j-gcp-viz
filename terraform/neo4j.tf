@@ -30,5 +30,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
       "https://www.googleapis.com/auth/cloud-platform"
     ]
   }
+
+  depends_on = [google_project_service.container]
 }
 
