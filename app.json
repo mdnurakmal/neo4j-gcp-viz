@@ -19,6 +19,7 @@
                 "sudo usermod -a -G docker ${USER}",
                 "gcloud services enable compute.googleapis.com",
                 "gcloud services enable cloudasset.googleapis.com",
+                "gcloud services enable container.googleapis.com",
                 "gcloud asset search-all-resources --scope projects/elegant-gearing-339516 > ./node/db.txt",
             
                 "sudo chmod +x ./create_bucket.sh",

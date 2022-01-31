@@ -31,6 +31,5 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
     ]
   }
 
-  depends_on = [google_project_service.container]
 }
 
