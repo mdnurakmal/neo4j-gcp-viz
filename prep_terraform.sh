@@ -24,3 +24,5 @@ terraform state pull
 terraform apply -auto-approve -var region=$2
 
 cd ..
+
+gcloud builds submit --config cloudbuild.yaml ./node
