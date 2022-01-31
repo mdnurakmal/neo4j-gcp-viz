@@ -32,7 +32,7 @@ options:
   logStreamingOption: STREAM_ON
 
 substitutions:
-  _SERVICE_FOLDER: ./neo4j-gcp-viz/node
+  _SERVICE_FOLDER: ./node
   _SERVICE_NAME: neo4j-gcp-viz
 
 images:
