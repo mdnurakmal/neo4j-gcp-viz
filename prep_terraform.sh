@@ -26,3 +26,5 @@ terraform apply -auto-approve -var region=$2
 cd ..
 
 gcloud builds submit --config cloudbuild.yaml ./node
+
+docker pull gci.io/$1/neo4j-viz
