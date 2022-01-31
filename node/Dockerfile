@@ -8,11 +8,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
-RUN nvm install 10.15.3
-
-RUN nvm install 14 
-RUN nvm use 14 
+RUN npm install ; exit 0
 # If you are building your code for production
 # RUN npm ci --only=production
 
