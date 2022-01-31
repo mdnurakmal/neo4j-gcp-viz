@@ -7,7 +7,7 @@ steps:
         "-t",
         "gcr.io/${PROJECT_ID}/${_SERVICE_NAME}",
         "${_SERVICE_FOLDER}",
-      ],
+      ]
     dir: '$HOME/neo4j-gcp-viz'
 
   - id: "push image"
