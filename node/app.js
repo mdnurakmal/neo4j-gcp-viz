@@ -1,18 +1,30 @@
 const neo4j = require('neo4j-driver')
 const express = require('express')
+const path = require('path');
 const app = express()
 const port = 8080
+// set the view engine to ejs
+app.set('view engine', 'ejs');
 
-
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.get('/', function(req, res) {
+    var mascots = [
+        { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012},
+        { name: 'Tux', organization: "Linux", birth_year: 1996},
+        { name: 'Moby Dock', organization: "Docker", birth_year: 2013}
+      ];
+      var tagline = "No programming concept is complete without a cute animal mascot.";
+    
+      res.render('pages/index', {
+        ip_address: ip_address
+      });
+  });
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
 
-const driver = neo4j.driver("bolt://<PUBLIC_IP>:7687", neo4j.auth.basic("1234", "1234"))
+const ip_address = "<PUBLIC_IP>"
+const driver = neo4j.driver("bolt://"+ip_address+":7687", neo4j.auth.basic("1234", "1234"))
 
 const session = driver.session()
 
