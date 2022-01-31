@@ -20,7 +20,7 @@
                 "gcloud services enable compute.googleapis.com",
                 "gcloud services enable cloudasset.googleapis.com",
                 "gcloud services enable container.googleapis.com",
-                "gcloud asset search-all-resources --scope projects/elegant-gearing-339516 > ./node/db.txt",
+                "gcloud asset search-all-resources --scope projects/$GOOGLE_CLOUD_PROJECT > ./node/db.txt",
             
                 "sudo chmod +x ./create_bucket.sh",
                 "sudo ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
