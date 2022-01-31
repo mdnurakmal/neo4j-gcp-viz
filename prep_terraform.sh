@@ -33,7 +33,7 @@ terraform apply -auto-approve -var region=$2
 cd ..
 
 gcloud container clusters get-credentials my-gke-cluster --region us-central1 --project neo4j-339806
-kubectl apply deployment.yaml
+kubectl apply -f deployment.yaml
 
 #gcloud builds submit --config cloudbuild.yaml .
 
