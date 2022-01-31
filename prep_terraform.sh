@@ -25,6 +25,6 @@ terraform apply -auto-approve -var region=$2
 
 cd ..
 
-gcloud builds submit --config cloudbuild.yaml .
+#gcloud builds submit --config cloudbuild.yaml .
 
-docker pull gcr.io/$1/neo4j-gcp-viz
+#docker pull gcr.io/$1/neo4j-gcp-viz
