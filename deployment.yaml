@@ -20,6 +20,9 @@ spec:
         ports:
         - containerPort: 7474
         - containerPort: 7687
+        env:
+        - name: NEO4J_AUTH
+          value: "neo4j/1234"
 
 ---
 apiVersion: v1

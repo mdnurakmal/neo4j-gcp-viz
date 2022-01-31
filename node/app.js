@@ -24,7 +24,7 @@ app.listen(port, () => {
 })
 
 const ip_address = "<PUBLIC_IP>"
-const driver = neo4j.driver("bolt://"+ip_address+":7687", neo4j.auth.basic("1234", "1234"))
+const driver = neo4j.driver("bolt://"+ip_address+":7687", neo4j.auth.basic("neo4j", "1234"))
 
 const session = driver.session()
 

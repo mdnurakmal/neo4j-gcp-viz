@@ -38,7 +38,7 @@ kubectl apply -f deployment.yaml
 IP=`gcloud compute forwarding-rules list | grep IP_ADDRESS | cut -d \: -f 2 | sed 's/^ *//g'`
 echo $IP
 
-sed -i 's/<PUBLIC_IP>/'$IP'-neo4j-viz/g' ./node/app.js
+sed -i 's/<PUBLIC_IP>/'$IP'/g' ./node/app.js
 
 gcloud builds submit --config cloudbuild.yaml .
 

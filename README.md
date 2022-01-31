@@ -39,3 +39,6 @@ Unable to pull image directly from dockerhub into cloud run so have to pull from
 Cloud run only allows 1 expose port but neo4j requires 2 port 
 
 If a new resource is created from kubernetes , how do we let terraform manage it ?
+
+To do 
+Currently it assume there is only 1 Public IP (1 Load balancer)
