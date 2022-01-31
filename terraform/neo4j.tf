@@ -1,25 +1,34 @@
-resource "google_cloud_run_service" "default" {
-  name     = "neo4j-serv"
-  location = "asia-southeast1"
+resource "google_service_account" "default" {
+  account_id   = "service-account-id"
+  display_name = "Service Account"
+}
 
-  template {
-    spec {
-      containers {
-        image = "gcr.io/${local.project}/neo4j"
-        ports {
-            name = "neo4j-7474"
-            container_port = "7474"
-        }
-        ports {
-            name = "neo4j-7687"
-            container_port = "7687"
-        }
-      }
-    }
-  }
+resource "google_container_cluster" "primary" {
+  name     = "my-gke-cluster"
+  location = var.region
 
-  traffic {
-    percent         = 100
-    latest_revision = true
+  # We can't create a cluster with no node pool defined, but we want to only use
+  # separately managed node pools. So we create the smallest possible default
+  # node pool and immediately delete it.
+  remove_default_node_pool = true
+  initial_node_count       = 1
+}
+
+resource "google_container_node_pool" "primary_preemptible_nodes" {
+  name       = "my-node-pool"
+  location   = var.region
+  cluster    = google_container_cluster.primary.name
+  node_count = 1
+
+  node_config {
+    preemptible  = true
+    machine_type = "n1-micro"
+
+    # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
+    service_account = google_service_account.default.email
+    oauth_scopes    = [
+      "https://www.googleapis.com/auth/cloud-platform"
+    ]
   }
 }
+
