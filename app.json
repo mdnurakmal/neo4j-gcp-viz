@@ -1,8 +1,5 @@
 { 
-    
-    "build": {
-        "skip": true
-        },
+
     "hooks": {
         "prebuild": {
             "commands": [
