@@ -1,7 +1,7 @@
 FROM node:17-alpine
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/node
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -9,6 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN npm install 
+WORKDIR /usr/src/node/spp
 # If you are building your code for production
 # RUN npm ci --only=production
 
@@ -17,4 +18,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["node", "app.js" ]
+CMD ["npm", "start" ]
