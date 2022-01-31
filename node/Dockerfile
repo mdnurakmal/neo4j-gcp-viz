@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # where available (npm@5+)
 COPY package*.json ./
 
-RUN npm install ; exit 0
+RUN npm install 
 # If you are building your code for production
 # RUN npm ci --only=production
 
@@ -17,4 +17,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["node" "app.js" ]
+CMD ["node", "app.js" ]
