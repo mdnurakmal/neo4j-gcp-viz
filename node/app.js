@@ -12,7 +12,7 @@ app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
 
-const driver = neo4j.driver("bolt://localhost:7687", neo4j.auth.basic("test", "test"))
+const driver = neo4j.driver("bolt://<PUBLIC_IP>:7687", neo4j.auth.basic("1234", "1234"))
 
 const session = driver.session()
 

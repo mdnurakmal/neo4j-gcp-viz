@@ -35,6 +35,11 @@ cd ..
 gcloud container clusters get-credentials my-gke-cluster --region $2 --project neo4j-339806
 kubectl apply -f deployment.yaml
 
-#gcloud builds submit --config cloudbuild.yaml .
+IP=`gcloud compute forwarding-rules list | grep IP_ADDRESS | cut -d \: -f 2 | sed 's/^ *//g'`
+echo $IP
 
-#docker pull gcr.io/$1/neo4j-gcp-viz
+sed -i 's/<PUBLIC_IP>/'$IP'-neo4j-viz/g' ./node/app.js
+
+gcloud builds submit --config cloudbuild.yaml .
+
+docker pull gcr.io/$1/neo4j-gcp-viz
