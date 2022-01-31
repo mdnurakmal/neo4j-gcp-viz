@@ -6,7 +6,14 @@ resource "google_cloud_run_service" "default" {
     spec {
       containers {
         image = "docker.io/neo4j"
-        ports = [7474,7687]
+        ports {
+            name = "neo4j-7474"
+            container_port = 7474
+        }
+        ports {
+            name = "neo4j-7687"
+            container_port = 7687
+        }
       }
     }
   }
