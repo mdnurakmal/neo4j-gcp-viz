@@ -24,6 +24,7 @@ else
     #gsutil mb gs://${1}-neo4j-viz
 fi
 
+terraform import google_compute_network.default default
 
 terraform state pull
 terraform apply -auto-approve -var region=$2

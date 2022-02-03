@@ -29,7 +29,7 @@
                 "sed -i 's/<PLACEHOLDER_PROJECTID>/'$GOOGLE_CLOUD_PROJECT'/g' ./terraform/main.tf",
                
                 
-               
+ 
                 "sudo chmod +x ./prep_terraform.sh",
                 "./prep_terraform.sh $GOOGLE_CLOUD_PROJECT $GOOGLE_CLOUD_REGION"
 
