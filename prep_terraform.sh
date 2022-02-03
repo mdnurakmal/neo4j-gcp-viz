@@ -12,10 +12,9 @@ docker tag neo4j gcr.io/$1/neo4j
 
 cd terraform
 terraform init
-terraform state show 'google_storage_bucket.tf-bucket'
+terraform state show 'google_storage_bucket.tf-bucket' 2> temp
+grep -o "No instance found for the given address!" temp | wc -l
 
-return_value=$?
-grep -o 'No instance found for the given address!.*' <<< "$return_value" | wc -l
 return_value=$?
 if [[ $return_value == 0 ]] 
 then
