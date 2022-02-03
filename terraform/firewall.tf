@@ -13,7 +13,7 @@ resource "google_compute_firewall" "neo4j-ingress" {
 
   direction = "INGRESS"
 
- depends_on = [google_compute_network.default]
+
 }
 
 resource "google_compute_firewall" "neo4j-egress" {
@@ -31,6 +31,6 @@ resource "google_compute_firewall" "neo4j-egress" {
 
   direction = "EGRESS"
 
-    depends_on = [google_compute_network.default]
+
 }
 
