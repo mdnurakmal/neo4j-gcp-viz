@@ -20,7 +20,7 @@
                 "gcloud services enable compute.googleapis.com",
                 "gcloud services enable cloudasset.googleapis.com",
                 "gcloud services enable container.googleapis.com",
-                "gcloud asset search-all-resources --scope projects/$GOOGLE_CLOUD_PROJECT > ./node/db.txt",
+                "gcloud asset search-all-resources --scope projects/$GOOGLE_CLOUD_PROJECT > $HOME/neo4j-gcp-viz/node/db.txt",
                 "pwd",
                 "cd node && ls",
                 "sudo chmod +x ./create_bucket.sh",
