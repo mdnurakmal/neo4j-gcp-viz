@@ -32,7 +32,7 @@ terraform apply -auto-approve -var region=$2
 
 cd ..
 
-gcloud container clusters get-credentials my-gke-cluster --region $2 --project neo4j-339806
+gcloud container clusters get-credentials my-gke-cluster --region $2 --project $1
 kubectl apply -f deployment.yaml
 
 IP=`gcloud compute forwarding-rules list | grep IP_ADDRESS | cut -d \: -f 2 | sed 's/^ *//g'`
