@@ -10,7 +10,7 @@
 2. Follow instructions in cloud shell
 
 [![Run on Google
-Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run/?git_repo=https://github.com/mdnurakmal/neo4j-gcp-viz.git)
+Cloud](https://deploy.cloud.run/button.svg)](https://ssh.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/mdnurakmal/neo4j-gcp-viz.git&cloudshell_image=gcr.io/cloudrun/button&shellonly=true)
 
 
 # How to remove
