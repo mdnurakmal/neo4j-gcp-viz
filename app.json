@@ -21,6 +21,7 @@
                 "gcloud services enable cloudasset.googleapis.com",
                 "gcloud services enable container.googleapis.com",
                 "gcloud asset search-all-resources --scope projects/$GOOGLE_CLOUD_PROJECT > ./node/db.txt",
+                "pwd",
                 "cd node && ls",
                 "sudo chmod +x ./create_bucket.sh",
                 "sudo ./create_bucket.sh $GOOGLE_CLOUD_PROJECT",
