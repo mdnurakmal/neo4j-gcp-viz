@@ -38,6 +38,8 @@ echo $IP
 
 sed -i 's/<PUBLIC_IP>/'$IP'/g' ./node/app.js
 
+sleep 120
+
 gcloud builds submit --config cloudbuild.yaml .
 
 docker pull gcr.io/$1/neo4j-gcp-viz
