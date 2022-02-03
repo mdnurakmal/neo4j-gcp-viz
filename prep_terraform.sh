@@ -37,8 +37,6 @@ echo $IP
 
 sed -i 's/<PUBLIC_IP>/'$IP'/g' ./node/app.js
 
-sleep 120
-
 cd node
 docker build -t gcr.io/$1/neo4j-gcp-viz .
 docker push gcr.io/$1/neo4j-gcp-viz
