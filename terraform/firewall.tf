@@ -11,7 +11,7 @@ resource "google_compute_firewall" "neo4j-ingress" {
     ports    = ["7474", "7687", "7473"]
   }
 
-  direction = INGRESS
+  direction = "INGRESS"
 
  depends_on = [google_compute_network.default]
 }
@@ -29,7 +29,7 @@ resource "google_compute_firewall" "neo4j-egress" {
     ports    = ["7474", "7687", "7473"]
   }
 
-  direction = EGRESS
+  direction = "EGRESS"
 
     depends_on = [google_compute_network.default]
 }
