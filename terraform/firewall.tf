@@ -36,4 +36,8 @@ resource "google_compute_firewall" "neo4j-egress" {
 
 resource "google_compute_network" "default" {
   name = "default"
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
