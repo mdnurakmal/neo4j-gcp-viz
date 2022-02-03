@@ -12,7 +12,7 @@ resource "null_resource" "docker_pull" {
 
  provisioner "local-exec" {
 
-    command = "docker pull gcr.io/${data.google_project.project.project_id}/text-to-speech-cloud-run"
+    command = "docker pull gcr.io/${data.google_project.project.project_id}/neo4j-gcp-viz"
   }
 
    depends_on = [null_resource.cloudbuild]
